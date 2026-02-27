@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Cairo', sans-serif;
+    line-height: 1.6;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(13, 110, 253, 0.9), rgba(13, 110, 253, 0.9)),
+                url('https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&q=80');
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.feature-card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card i {
+    font-size: 3rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8rem;
+}
+
+.bi {
+    font-size: 1.2rem;
+}
+
+/* Custom Styles for RTL */
+.navbar-nav {
+    padding-right: 0;
+}
+
+.me-auto {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+.me-2 {
+    margin-right: 0.5rem !important;
+    margin-left: 0 !important;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.feature-card {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.feature-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.feature-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 500px;
+        text-align: center;
+    }}
+/*     
+    .search-box {
+        margin-top:0; */
